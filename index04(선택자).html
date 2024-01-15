@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* .abox p {color:red;} */
+        .abox > p {color:red;}
+        .abox > ul p {color : green;}
+
+        .bbox input[type=password]{color:red;} /* input 태그에 속성(type) =값(password)인 값을 red로 */
+        .bbox input[name="aaa"]{color:violet;}
+
+        /* .ccbox >ul >li {color : blue;}  */
+        li[class*="item"] {color:aqua;} /* li태그에 class 에 item이 포함된 모든 값(*의미)을 aqua로 */
+        
+
+        /*가상선택자 액티브 , 호버 ,포커스 (가장 자주쓰는 가상선택자) +(:after , :before)*/
+        .cbox .a:active {background-color: brown;} /* 마우스가 클릭을 했을 때 */
+
+        .cbox .b:hover {background-color: blanchedalmond;} /*마우스가 닿았을 떄 */
+
+        .cbox input:focus {border: 1px solid chartreuse; outline : none;} /* 텍스트 창 안에 포커스가 올라가있을 떄 */
+        
+        /* .cbox .c:after{background-color: black;} /* 내용의 끝에 가상의 요소를 삽입할 때 사용*/
+        .cbox .d:before{background-color: burlywood;}  */
+    </style>
+</head>
+<body>
+
+
+
+
+    
+    <div class ="abox">
+        <p>하위선택자</p>
+        <p>하위선택자</p>
+        
+        
+        <ul>
+            <li>하위선택자</li>
+            <li><p>하위선택자</p></li>
+            <li><p>하위선택자</p></li>
+        </ul>
+        <p>하위선택자</p>
+
+        <ul>
+            하위선택자
+        </ul>
+    </div>
+
+    <p>여기는?</p>
+
+    <hr>
+
+    <div class = "bbox">
+        아이디:<input type="text" name="aaa"><br> 
+        이름  :<input type ="text" name ="bbb"><br>
+        비밀번호:<input type="password" name = "ccc">
+    </div>
+    
+    <div class="ccbox">
+        <ul><li class = "item-1">아이템</li></ul>
+        <ul><li class = "item-2">아이템</li></ul>
+        <ul><li class = "item-3">아이템</li></ul>
+        <ul><li class = "item-4">아이템</li></ul>
+        <ul><li class = "item-5">아이템</li></ul>
+        <ul><li class = "item-6">아이템</li></ul>
+    </div>
+
+    <hr>
+    <!-- 가상선택자  액티브 , 호버 ,포커스 -->
+
+
+    <div class = "cbox">
+        <div class = "a">액티브</div>
+
+        <div class = "b">호버</div>
+
+        포커스<input type = "text" name = "aaa">
+
+        <!-- <div class = "c">애프터</div>
+
+        <div class = "d">비포</div> -->
+
+
+    </div>
+</body>
+</html>
