@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .abox {
+            border: 1px solid #777;
+            height: 100px;
+            /*원래 높이는 , 컨텐츠가 자연스럽게 채워서 내려오도록 가만히 놔둔다- 굳이 높이를 지정해주진 않는다 */
+            width: 300px;
+            /*박스의 크기를 지정하고 박스안의 값이 박스를 넘칠 때 사용하는 overflow를 사용한다 */
+            /* overflow: scroll; 스크롤 형식 */
+            /* overflow : hidden; 숨긴다-(크기에 맞게 자름) */
+            /* overflow : visible; 보인다 - 기본값 */
+            overflow: auto;
+            /* 글이 넘치면 스크롤 생성 , 없으면 생성하지않는다 */
+        }
+
+        /*
+        가로 스크롤 만들기
+        */
+        .bbox {
+            border: 1px solid #777;
+            height: 100px;
+            width: 300px;
+
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            /* 공백은 유지하면서 줄바꿈은 하지않음*/
+        }
+        
+        .cbox {
+            border :1px solid #777;
+            height: 100px;
+            width : 300px;
+
+            overflow-x:auto;
+            overflow-y:auto;
+            white-space: nowrap;
+        }
+
+        .cbox table {
+            border-collapse: collapse; /*중첩되는 선을 하나로 합침*/
+        }
+
+       .cbox table, .cbox tr, .cbox td {
+            border:1px solid #777;
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <p class="abox">
+        Visual Studio에서 Eclipse의 Ctrl + D와 유사한 기능은 없지만, 비슷한 동작을 수행할 수 있는 몇 가지 대안이 있습니다. 여러 줄의 코드를 한 번에 삭제하고 싶다면 다음과 같은
+        방법들이 있습니다:
+
+        삭제 키 사용: 여러 줄을 선택한 후 Delete 키나 Backspace 키를 눌러 삭제할 수 있습니다.
+
+        주석 처리: 여러 줄을 선택한 후 Ctrl + K, Ctrl + C 키를 사용하여 주석 처리하면 해당 코드가 주석 처리되어 비활성화됩니다.
+
+        코드 스니펫 사용: 코드 블록을 드래그하여 드롭다운에서 "Remove and Sort Usings"를 선택하면 코드 블록이 삭제됩니다. 이 기능은 C# 코드에서 사용 가능합니다.
+    </p>
+    <div class="bbox">
+        <p> Studio에서 Eclipse의 Ctrl + D와 유사한 기능은 없지만, 비슷한 동작을 수행할 수 있는 몇 가지 대안이 있습니다. 여러 줄의 코드를 한 번에 삭제하고 싶다면 다음과 같은
+            방법들이 있습니다:</p>
+
+        <p> 삭제 키 사용: 여러 줄을 선택한 후 Delete 키나 Backspace 키를 눌러 삭제할 수 있습니다.</p>
+
+        <p> 주석 처리: 여러 줄을 선택한 후 Ctrl + K, Ctrl + C 키를 사용하여 주석 처리하면 해당 코드가 주석 처리되어 비활성화됩니다. </p>
+
+        <p>코드 스니펫 사용: 코드 블록을 드래그하여 드롭다운에서 "Remove and Sort Usings"를 선택하면 코드 블록이 삭제됩니다. 이 기능은 C# 코드에서 사용 가능합니다.</p>
+    </div>
+
+    <div class = "cbox">
+        <h3>제목</h3>
+
+        <table>
+            <tr>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

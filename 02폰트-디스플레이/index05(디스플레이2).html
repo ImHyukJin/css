@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding:0; margin:0;}
+        ul , li {list-style: none;}
+
+        .gnb { 
+            text-align : center;
+            /* gnb안 박스도 센터로 갔다
+                글자도 가운데로 갔다(a태그) */
+                background-color: black;
+            
+        }
+        .gnb > li {display : inline-block;}
+
+        .gnb > li > a {
+            display : block ; /*박스 크기를 위해 a를 blcok으로*/
+            width : 100px;
+            height : 100px;
+            line-height: 100px;
+            text-decoration: none;
+            color:#fff;
+           
+        }
+        .gnb>li>a:hover{
+            background-color: #333;
+        }
+
+        .gnb2 > li > a:hover {
+            background-color: #333;
+        }
+        .gnb2 > li > a {
+            display : block ;
+            width : 100px;
+            height : 100px;
+            line-height : 100px;
+            text-decoration: none;
+            color:#fff;
+            text-align: center;
+        }
+        .gnb2 > li {
+            display : inline-block ; 
+          
+        }
+        .gnb2 {
+            text-align: right;
+            background-color: black;
+        }
+        header {
+            background-color: black;
+            text-align: center;
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+    
+    <!-- <header>
+        <nav class = "nav">
+            <ul class = "gnb">
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul
+        </nav>
+
+    </header> -->
+
+      <header>
+        <img src = "img/생선만 골라먹는 아기 고양이.jpg" alt="고양이">
+        <nav class = "nav2">
+            <ul class = "gnb2">
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+
+    </header>
+</body>
+</html>
