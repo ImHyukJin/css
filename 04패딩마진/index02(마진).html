@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:url(img/KakaoTalk_20240116_164728601.jpg);
+        }
+
+        .abox {
+            width:500px;
+            height:100px;
+            border:1px solid #777;
+            background-color: aqua;
+
+           /* margin:0px; 4방향 */
+           /* margin:10px 30px; 상하 , 좌우 */
+           /* margin : 10px 20px 50px ; 상,좌우,하 */
+           margin : 10px 20px 50px 20px ; /*상,우,하,좌*/
+
+           margin-bottom: 100px; /*css는 중복되면 마지막 코드가 적용된다*/
+        }
+        
+        .sss {
+
+            text-align: center;/*text-align은 요소를 중앙으로 보낼때 */
+            color:black;
+            background-color: #777;
+            width:500px;
+            height:100px;
+            border: 1px solid #777;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <p class="abox">
+        마진은 주황색<br>
+        p태그는 기본적으로 마진속성이 있다.<br>
+        마진은 상자간의거리를 이격할 때 사용합니다.<br>
+        (마진은 서로 겹칩니다-큰쪽을 따라간다)<br>
+
+    </p>
+
+    <p class="abox">
+
+
+    </p>
+
+    <p class="sss">
+ 
+        상자를 중앙으로 보낼땐 margin: 0 auto 를 쓴다
+        (조건 - 상자의 너비가 지정이 되어있어야한다)
+    </p>
+</body>
+</html>

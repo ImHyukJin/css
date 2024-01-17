@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .abox{
+            width:500px;
+            margin:0 auto;
+            border:1px solid #777;
+            
+            /*2nd 방법 부모요소에 overflow:hidden */
+            overflow:hidden;
+        }
+
+        /* 자식에 float을 적용하면 부모영역이 자식을 감싸지 못하는 문제가 생기기때문에 1st,2nd방법*/
+
+        /* float 사용법 1st-부모요소가 float을 못잡아줘서 문제가 생김 해결하는법 외우기 가상요소 after*/
+        /* .abox:after{content:"";display:block;clear:both;} */
+    
+        .abox .item {
+            float: left;
+            border:1px solid #777;
+            width:25%; /*부모영역에 대한 % */
+            box-sizing: border-box;
+        }
+
+        .bbox {
+            border:1px solid #777;
+            margin: 0 auto;
+            width: 500px;
+
+            overflow:hidden;    
+        }
+
+        .bbox .left{
+            float:left;
+                  }
+        
+        .bbox .left2{
+            float:left;
+            
+        }
+
+        .bbox .right{
+            float:right;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="abox">
+        <div class="item">상자</div>
+        <div class="item">상자</div>
+        <div class="item">상자</div>
+        <div class="item">상자</div>
+        
+    </div>
+
+    <div class="bbox">
+        <div class="left">왼쪽</div>
+        <div class="right">오른쪽</div>
+        <div class="left2">왼쪽</div>
+        
+        <!-- cleart:both; 는 더이상 플롯의 영향을 받지 않도록 함 -->
+        <div style="clear:both;">하나 넣었음</div> 
+    </div>
+
+    <hr>
+
+    <!-- 메뉴를 float으로 정확히 5등분 -->
+
+    <style>
+        *{margin:0; padding:0;}
+        ul, li{list-style:none;}
+
+        .aa li a{
+            text-decoration: none;
+            color: #fff;
+        }
+        header{
+            background-color: black;
+            
+        }
+        .aa{
+            overflow: hidden;
+            border: 1px solid #777;
+            margin : 0 auto;
+            width:100px;
+        }
+        .aa li{
+            float:left;
+            width:20%;
+            box-sizing: border-box;
+    }
+    </style>
+<header>
+    <ul class="aa">
+        <li class = "item"><a href="#">메뉴</a></li>
+        <li class = "item"><a href="#">메뉴</a></li>
+        <li class = "item"><a href="#">메뉴</a></li>
+        <li class = "item"><a href="#">메뉴</a></li>
+        <li class = "item"><a href="#">메뉴</a></li>
+   
+    </ul>
+</header>
+    <div style="clear:both; text-align: center;" >
+        <h1>다양한 메뉴 팝니다</h1>
+        
+    </div>
+
+</body>
+</html>

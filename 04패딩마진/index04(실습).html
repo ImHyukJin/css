@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*줘놓고 시작하면 디자인이 더편한다*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li,
+        ol,
+        ld,
+        dd {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            /*화면크기에 따라 이미지 크기 변동 및 화질손실x ,*/
+        }
+
+        /*박스영역 구분 */
+        /*줘놓고 시작하면 디자인이 더편한다 까지 */
+
+        .nav {
+            background-color: #000;
+        }
+
+        .nav .gnb li {
+            display: inline-block;
+        }
+
+        .nav .gnb li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            box-sizing: border-box;
+        }
+
+        .nav .gnb li a:hover {
+            border-bottom: 3px solid #fff
+        }
+
+        .nav {
+            text-align: center;
+        }
+
+        article {
+            text-align: center;
+            background-color: pink;
+        }
+
+        .top {
+            width: 800px;
+            margin: 0 auto;
+            margin-top:100px;
+        }
+
+        .content {
+            border: 1px solid #777;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <ul class="gnb">
+                <li><a href="#">메뉴</a> </li>
+                <li><a href="#">메뉴</a> </li>
+                <li><a href="#">메뉴</a> </li>
+                <li><a href="#">메뉴</a> </li>
+                <li><a href="#">메뉴</a> </li>
+
+            </ul>
+        </nav>
+
+
+
+
+    </header>
+
+    <article class="abox">
+        <img src="img/d46c9376-a912-4539-b471-a6f215f973dd_1080x380.jpg" alt="슬라이드">
+
+    </article>
+
+    <section>
+        <div class="top">
+            <h3>오늘의발견</h3>
+            <div class="content">
+                본문내용...<br>
+                본문내용...<br>
+                본문내용...<br>
+                본문내용...<br>
+                본문내용...<br>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
