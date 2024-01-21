@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{margin: 0; padding: 0;}
+        ul, li{ list-style:none;}
+        
+        .logo{
+           text-align: center;
+           background-color: black;
+           position: relative;
+        }
+
+        header{
+            position: fixed;
+            top:0;
+            left:0;
+            width: 100%;
+            z-index: 5;
+        }
+        .nav .gnb{
+            text-align: center;
+            background-color: black;
+           
+        
+        }
+
+        .nav .gnb li{
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        .nav .gnb li a{
+            display: block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 3px solid black;
+        }
+
+        .nav .gnb li a:hover{
+            cursor: pointer;
+            border-bottom: 3px solid #fff;
+        }
+
+        section{
+            height:1500px;
+            margin-top: 198px;
+            position:relative;
+        }
+        .floating-btn{
+            background-color: red;
+            width: 50px;
+            height:50px;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+            bottom:15px;
+            right:15px;
+            z-index:10;/*z축의 높이*/
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="img/횟집에서 정모하는 아기 고양이.jpg" alt="로고" width="150" >
+        </div>
+        <nav  class="nav">
+            <ul  class = "gnb">
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <section>
+        <div class ="floating-btn">
+            응...
+        </div>
+        <h3>안녕하세요</h3> .......
+        <h3>안녕하세요</h3> .......
+       <h3>안녕하세요</h3> .....asdasd..
+       <h3>안녕하세요</h3> .......
+       <h3>안녕하세요</h3> .......asdasdas
+    </section>
+</body>
+</html>

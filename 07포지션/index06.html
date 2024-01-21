@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+
+        *{margin:0; padding:0; list-style: none;}
+
+        .head2 .nav{
+            background-color: black;
+            text-align: center;
+        }
+        .nav .gnb li{
+            display: inline-block;
+        }
+        .nav .gnb a{
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            padding: 15px;
+            margin-left: 30px;
+        }
+       .head1{
+        text-align: center;
+        background-color: blanchedalmond;
+       }
+       .head1 img{
+        margin: 20px;
+       }
+       .top{
+        position: fixed;
+        background-color: red;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        right: 50px;
+        top: 50px;
+       }
+       .ipf {
+        overflow:hidden;
+        box-sizing: border-box;
+        padding-left: 100px;
+
+       }
+
+       /* .ipf-left {
+        width: 20%;
+        background-color: blue;
+        display: inline-block;
+       } */
+ 
+       .ipf-center {
+        text-align: center;
+        margin: 0 100px 0;
+        /* margin-left: 100px; */
+       }
+       
+       .ipf-center li{
+           text-align: center;
+           width: 25%;
+           margin: 40px 0;
+           float: left;
+           box-sizing: border-box;
+       }
+
+       .sticky{
+        position: sticky;
+        top:0;
+        text-align: center;
+        background-color: #fff;
+        
+       }
+       .wrap{
+        text-align: center;
+       }
+       .sticky p{
+        display: inline-block;
+        margin-left: 13px;
+        padding:10px
+       }
+
+       .center{
+        position:relative;
+        background-color: bisque;
+       }
+       .position1{
+        position:absolute;
+        top:0px;
+        left:230px;
+       }
+       .position2{
+        position:absolute;
+        top:0%;
+        right:150px;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <a href="#">TOP</a>
+    </div>
+    <header class="head1">
+        <img src="images/KakaoTalk_20240118_163521375_06.jpg">
+    </header>
+
+    <header class="head2">
+        <nav  class="nav">
+            <ul class="gnb">
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrap">
+        <div class="ipf"> 
+          
+            <div class="ipf-center">
+                <ul>
+                <li><img src="images/KakaoTalk_20240118_163521375_02.png"><br>iphone(디스플레이 or 플롯)</li>
+                <li><img src="images/KakaoTalk_20240118_163521375_03.png"><br>iphone</li>
+                <li><img src="images/KakaoTalk_20240118_163521375_04.png"><br>ipad</li>
+                <li><img src="images/KakaoTalk_20240118_163521375_05.png"><br>iMac</li>
+  
+            </ul>
+                </div>
+
+                
+            
+  
+        </div>
+        <div class="sticky">
+            <p>아이콘</p>
+            <p>아이콘</p>
+            <p>아이콘</p>
+            <p>아이콘</p>
+        </div>
+        <div class="content">
+            
+
+            <div class="center">
+                <img src="images/KakaoTalk_20240118_163521375_01.jpg">
+                <div class="position1">
+                    <img src="images/KakaoTalk_20240118_163521375_07.png" style="display: block; margin-bottom: 10px;">
+                    <img src="images/KakaoTalk_20240118_163521375_08.png">
+                    
+                </div>
+
+                <div class="position2">
+                    <img src="images/KakaoTalk_20240118_163521375_09.png" style="display: block; margin-bottom: 10px;">
+                    <img src="images/KakaoTalk_20240118_163521375_10.png">
+                </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+</html>

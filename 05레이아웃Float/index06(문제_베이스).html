@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{padding: 0; margin: 0; list-style: none;}
+
+        .wrap {width: 1080px; margin: 0 auto; height: 310px;}
+        .content {overflow: hidden; box-sizing: border-box;}
+        .list-wrap {width:540px; float: left; border: 1px solid #777; overflow: hidden;}
+        .slide-wrap {width: 236px; float: left; border: 1px solid #777; height: 310px; margin-left: 8px;}
+        .user-wrap {width: 280px; float: left;  height: 310px; margin-left: 8px; box-sizing: border-box; float: left; text-align: center; border: 1px solid #777;} 
+        .user-wrap .login{padding:40px 20px 30px; border-bottom: 1px solid #777;}
+        li img{width: 33%; height: 155px; float: left; box-sizing: border-box;}
+        .slide-wrap img{width: 100%; height: auto;  box-sizing: border-box;}
+        #melon{text-align: left; float:left;  font-size: 11px; color: #777;}
+        #join{text-align: right; float:right ; font-size: 11px;color:#777;}  
+        .promotion{text-align: left; border: 1px solid #777; height: 152px;}
+       button{width: 100%; height: 42px; color: #fff; background-color: hsl(120, 61%, 47%); font-size: 14px; margin-top: 8px; border:none;}
+       /* button{padding 줘서 크기조정도 된다~} */
+    </style>
+
+
+
+</head>
+<body>
+    
+    <section>
+        <div class="wrap">
+            최신앨범(1080px)
+        <div class="content">
+            <div class="list-wrap"><!-- 왼 -->
+                <ul>
+                    <li><img src="img/횟집에서 정모하는 아기 고양이.jpg"></li>
+                    <li><img src="img/새해 맞이하는 아기 고양이.jpg"></li>
+                    <li><img src="img/생선만 골라먹는 아기 고양이.jpg"></li>
+                    <li><img src="img/횟집에서 정모하는 아기 고양이.jpg"></li>
+                    <li><img src="img/새해 맞이하는 아기 고양이.jpg"></li>
+                    <li><img src="img/생선만 골라먹는 아기 고양이.jpg"></li>
+           
+
+                </ul>
+            </div>
+            <div class="slide-wrap"><!-- 가운데 -->
+               <img src="img/KakaoTalk_20240117_152522631_02.jpg">
+            </div>
+            <div class="user-wrap"><!-- 오른쪽 -->
+                너비:280px 왼쪽마진:8px
+                <div class ="login">
+                    <div>
+                        <p id="melon">멜론을 더 안전하게 이용하세요</p>
+                        <p id="join">회원가입</p>
+                    </div>
+                    
+                    <button>로그인</button>
+               
+                </div>
+                <div class="promotion">
+                    프로모션 영역...
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
