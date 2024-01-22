@@ -1,0 +1,9 @@
+/*===================================헤더============================*/
+.navbar-inverse{
+    background-color: aquamarine;
+    border-color: violet;
+}
+
+.navbar {
+    border-radius: 0;
+}
