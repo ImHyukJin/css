@@ -1,0 +1,134 @@
+*{margin:0; padding: 0; box-sizing: border-box;}
+ul , li , ol {list-style: none;}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================= 상품 디테일===============*/
+.detail-info{
+    min-height: 345px;
+}
+
+.detail-info .title{
+    font-size: 24px;
+}
+
+.detail-info .price {
+    border-top:1px solid #777;
+    border-bottom:1px solid #777;
+    font-size: 30px;
+    padding:10px 0px;
+    font-weight: bold;
+}
+
+p {
+    margin : 0 0 10px;
+}
+
+.detail-info .delivery {
+    color: #888;
+}
+
+.tprice{ overflow: hidden;}
+.tprice .left{float: left; font-size: 18px; line-height: 45px;}
+
+.tprice strong{float: right; font-size: 35px;}
+
+.detail-control .order {
+    overflow: hidden;
+}
+.detail-control .order .left{
+    width: 50%;
+    height: 60px;
+    font-size: 18px;
+    float: left;
+}
+.detail-control .order .right{
+    width: 50%;
+    height: 60px;
+    font-size: 18px;
+    float: right;
+    background-color: powderblue;
+    color: #fff;
+}
+
+.reply-wrap{
+    background-color:#f5f5f5;
+}
+
+.reply-wrap{
+    position:relative;
+}
+.reply-image {
+    position:absolute;
+    width: 100px;
+    height: auto;
+    left:10px;
+    top:20px;
+}
+
+.reply-content{
+    padding:15px;
+    padding-left: 120px;
+}
+.reply-wrap {
+    border: 1px solid #777;
+}
+.reply-group .reply-input{
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.reply-content > .form-control{
+   margin : 0px 0px 15px;
+}
+
+.reply-group{
+    overflow: hidden;
+}
+.reply-group .right {
+    float:right;
+}
+
+.reply-input .form-control{
+    margin-bottom: 7px;
+}
+
+.reply-content textarea{
+    height: 50px;
+    transition: height .4s ease-in-out
+}
+
+.reply-content textarea:hover{
+    height: 100px;
+}
+
+.reply-input .form-control:focus{
+    background-color: aquamarine;
+    
+}
+
+.reply-input{
+    float: left;
+}
+
+/*========== 탭 디자인===============*/
+.mytab > li{
+    width: 25%;
+    text-align: center;
+}
+
+.mytab > li > a{
+    color:#000;
+    border:1px solid #e3e3e3;
+    margin: 0;
+    border-radius: 0;
+}
+.nav-tabs > li.active>a,
+.nav-tabs > li.active>a:focus,
+.nav-tabs > li.active>a:hover{
+    color:red;
+}
+

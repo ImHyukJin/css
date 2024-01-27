@@ -126,4 +126,21 @@
         width: 20%;
     }
 }
+/* ========================상품 그리드==================*/
+.prod-nike .prod-content{overflow: hidden; padding:15px 0;}
+.prod-nike .prod-content .left{ float: left;}
+.prod-nike .prod-content .right{float:right;}
 
+.prod-nike .prod-hover {
+    overflow: hidden;
+    margin-top: -30px;
+    opacity: 0;
+
+    transition:all 0.2s ease-in-out;
+}
+.prod-nike .prod-hover > li { float: left;}
+
+/*호버처리*/
+.prod-nike:hover > .prod-hover{
+    opacity: 1;
+}
